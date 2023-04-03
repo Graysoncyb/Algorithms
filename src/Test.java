@@ -1,4 +1,5 @@
-import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.InsertionX;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  * @author Yuanbin Cai
@@ -6,6 +7,14 @@ import edu.princeton.cs.algs4.StdIn;
  **/
 public class Test {
     public static void main(String[] args) {
-        StdIn.readAll();
+        Integer[] a = {6,5,4,3,2,1};
+        InsertionX.sort(a);
+        show(a);
+    }
+
+    private static void show(Comparable[] a) {
+        for (int i = 0; i < a.length; i++) {
+            StdOut.println(a[i]);
+        }
     }
 }
