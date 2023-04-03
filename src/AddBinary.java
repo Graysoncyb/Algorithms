@@ -12,8 +12,8 @@ public class AddBinary {
         int[] c = new int[a.length + 1];
         for (int i = 0; i < a.length; i++) {
             int sum = a[i] + b[i] + carry;
-            c[i] = sum % 2;
-            carry = sum / 2;
+            c[i] = sum % 2; // remainder
+            carry = sum / 2; // quotient
         }
         c[a.length] = carry;
         return c;
